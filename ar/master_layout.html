@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <meta name="description" content="flydubai" />
+    <meta name="keywords" content="flydubai" />
+    <title>Online Check-in | flydubai</title>
+    <link type="text/css" rel="stylesheet" href="../css/flydubai.css">
+    <link type="text/css" rel="stylesheet" href="../css/flydubai_styles_ar.css">
+    <!--<link rel="stylesheet" href="http://ux.flydubai.com/rebrand/css/flydubai.css">-->
+    <link rel="shortcut icon" type="image/x-icon" href="http://ux.flydubai.com/favicon.ico">
+    <link rel="shortcut icon" sizes="192x192" href="http://ux.flydubai.com/icon-192x192.png">
+    <link rel="apple-touch-icon" href="http://ux.flydubai.com/icon-152x152.png">
+    <script type="text/javascript" src="http://ux.flydubai.com/rebrand/js/flydubai.js"></script>
+    <script type="text/javascript" src="http://ux.flydubai.com/rebrand/js/airports.js"></script>
+    <!-- IN PRODUCTION, LOAD A JSON FILE AND CONVERT TO THIS SPECIFIC OBJECT NOTATION -->
+    <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/action_script.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="error-tooltip-bubble">
+        <div class="tooltip-text"></div>
+        <div class="tooltip-close"></div>
+        <div class="tooltip-arrow"></div>
+    </div>
+
+    <div class="main">
+        <div class="tablerow">
+            <div class="logostyle">
+                <a href="http://www.flydubai.com/" ><img src="../images/flydubai_logo.jpg" alt="logo"></a>
+                <span class="backtoflydubaiarrow">
+                    <a href="http://www.flydubai.com/" class="backtoflydubai">
+                        <img src="../images/backto_flydubai_arrow.jpg" alt="backtoflydubai">&nbsp;Back to flydubai.com</a></span>
+            </div>
+            <div class="logostyle1">
+                <div class="topicons">
+                    <div class="iconstyle">
+                        <div class="header iconholder">
+                            <div class="title-strip">
+                                <ul class="title-strip-list">
+                                    <li class="header-menu-list-item settings-list">
+                                        <ul>
+                                            <li class="setting-list-item">
+                                                <div class="checkbox-icon-btn">
+                                                    <span class="icon-language"></span>
+                                                    <span class="checkbox-icon-title">Change language</span>
+                                                </div>
+                                                <ul class="header-sub-menu">
+                                                    <li><a href="#" d>English</a></li>
+                                                    <li><a href="#" lang="ru">русский</a></li>
+                                                    <li><a href="#" lang="ar">العربية</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menudiv">
+        <ul id="ulcode">
+            <li class="navprev listspan"><a href="index.html">1. Passengers to check-in</a></li>
+            <li class="navselected listspan"><a href="#">2. Passenger details</a></li>
+            <li class="listspan"><a href="#">3. Select seats</a></li>
+            <li class="listspan"><a href="confirmationnotall.html">4. Confirmation</a></li>
+        </ul>
+    </div>
+
+
+    <!--Navigation Section Ends here-->
+
+    <!--Main Content Section Starts here-->
+    <div class="main container">
+        <div class="tablerow">&nbsp;</div>
+        <div class="left_pane">
+            <div class="portlet"></div>
+        </div>
+        <div class="right_pane">
+            <h2>ECBB96</h2>
+
+            <div class="check_in">
+                <p>Remaining time for check-in</p>
+                <div class="counter">
+                    <span><b>09</b> Hours</span>
+                    <i>:</i>
+                    <span><b>09</b> Minutes</span>
+                    <i>:</i>
+                    <span><b>09</b> Seconds</span>
+                </div>
+            </div>
+
+
+            <div class="sideaccordion" id="sideaccordion">
+                <h3>
+                    <span class="titler">Outbound</span>
+                    <span><b>from <i>Dubai (DXB)</i></b> <b>to <i>Doha (DOH)</i></b></span>
+                </h3>
+                <div class="acc_content">
+                    <dl>
+                        <dt><span>Orgin: </span>Dubai Terminal2</dt>
+                        <dt><span>Destination: </span>Doha</dt>
+                        <dt><span>Flight no.: </span>FZ-003</dt>
+                    </dl>
+                    <b>Thu, 18th September 2015</b>
+                    <dl>
+                        <dt><span>Depart: </span>14:30</dt>
+                        <dt><span>Arrive: </span>16:40</dt>
+                        <dt><span>Duration: </span>2h 10min</dt>
+                        <dt><span>Class of Travel: </span>Economy</dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../images/handbaggage_icon.png" alt="Hand Baggage">
+                            <i>2x 7kg Hand Baggage </i></dt>
+                        <dt>
+                            <img src="../images/checkedbagga_icon.png" alt="Checked Baggage">
+                            <i>2x 40kg Checked Baggage </i></dt>
+                        <dt>
+                            <img src="../images/flightentertainment_icon.png" alt="1xIn-flight Entertainment">
+                            <i>1x In-flight Entertainment </i></dt>
+                        <dt>
+                            <img src="../images/meals_icon.png" alt="2xMeals">
+                            <i>2x Meals </i></dt>
+                        <dt>
+                            <img src="../images/seats_icon.png" alt="4xSeats">
+                            <i>4x Seats </i></dt>
+                    </dl>
+                </div>
+
+                <h3>
+                    <span class="titler">Inbound</span>
+                    <span><b>from <i>Doha (DOH)</i></b> <b>to <i>Dubai (DXB)</i></b></span>
+                </h3>
+                <div class="acc_content">
+                    <dl>
+                        <dt><span>Orgin: </span>Doha</dt>
+                        <dt><span>Destination: </span>Dubai Terminal2</dt>
+                        <dt><span>Flight no.: </span>FZ-003</dt>
+                    </dl>
+                    <b>Thu, 19th September 2015</b>
+                    <dl>
+                        <dt><span>Depart: </span>14:30</dt>
+                        <dt><span>Arrive: </span>16:40</dt>
+                        <dt><span>Duration: </span>2h 10min</dt>
+                        <dt><span>Class of Travel: </span>Economy</dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../images/handbaggage_icon.png" alt="Hand Baggage">
+                            <i>2x 7kg Hand Baggage </i></dt>
+                        <dt>
+                            <img src="../images/checkedbagga_icon.png" alt="Checked Baggage">
+                            <i>2x 40kg Checked Baggage </i></dt>
+                        <dt>
+                            <img src="../images/flightentertainment_icon.png" alt="1xIn-flight Entertainment">
+                            <i>1x In-flight Entertainment </i></dt>
+                        <dt>
+                            <img src="../images/meals_icon.png" alt="2xMeals">
+                            <i>2x Meals </i></dt>
+                        <dt>
+                            <img src="../images/seats_icon.png" alt="4xSeats">
+                            <i>4x Seats </i></dt>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerHolder">
+            <ul class="footerolci">
+                <li><a href="http://www.flydubai.com/en/terms-and-conditions/">Terms and Conditions |</a></li>
+                <li><a href="http://www.flydubai.com/en/accessibility">Accessibility |</a></li>
+                <li><a href="http://www.flydubai.com/">flydubai.com</a></li>
+            </ul>
+            <p class="footerp">&copy flydubai 2015. All rights reserved.</p>
+            <span style="float: right; color: #666; font-size: 10px">Version: 1.0.0.0
+            </span>
+        </div>
+    </div>
+</body>
+</html>

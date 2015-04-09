@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <meta name="description" content="flydubai" />
+    <meta name="keywords" content="flydubai" />
+    <title>Online Check-in | flydubai</title>
+    <link type="text/css" rel="stylesheet" href="../css/flydubai.css">
+    <link type="text/css" rel="stylesheet" href="../css/flydubai_styles.css">
+
+    <!--<link rel="stylesheet" href="http://ux.flydubai.com/rebrand/css/flydubai.css">-->
+    <link rel="shortcut icon" type="image/x-icon" href="http://ux.flydubai.com/favicon.ico">
+    <link rel="shortcut icon" sizes="192x192" href="http://ux.flydubai.com/icon-192x192.png">
+    <link rel="apple-touch-icon" href="http://ux.flydubai.com/icon-152x152.png">
+    <script type="text/javascript" src="http://ux.flydubai.com/rebrand/js/flydubai.js"></script>
+    <script type="text/javascript" src="http://ux.flydubai.com/rebrand/js/airports.js"></script>
+    <!-- IN PRODUCTION, LOAD A JSON FILE AND CONVERT TO THIS SPECIFIC OBJECT NOTATION -->
+
+    <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/action_script.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" language="JavaScript">
+        function popdangerous(popUpDiv1) {
+
+            document.getElementById('popUpDiv').style.display = 'block';
+        }
+
+        function popdangerous1(popUpDiv1) {
+
+            document.getElementById('popUpDiv1').style.display = 'block';
+        }
+
+        function popdangerous2(popUpDiv2) {
+
+            document.getElementById('popUpDiv2').style.display = 'block';
+        }
+    </script>
+
+</head>
+<body>
+
+    <div id="error-tooltip-bubble">
+        <div class="tooltip-text"></div>
+        <div class="tooltip-close"></div>
+        <div class="tooltip-arrow"></div>
+    </div>
+    <!--Logo Section Starts here-->
+    <div class="main">
+        <div class="tablerow">
+            <div class="logostyle">
+                <img src="../images/flydubai_logo.jpg" alt="logo"><a name="Top"></a>
+                <span class="backtoflydubaiarrow">
+                    <img src="../images/backto_flydubai_arrow.jpg" alt="backtoflydubai">&nbsp;<a href="#" class="backtoflydubai">Back to flydubai.com</a></span>
+            </div>
+            <div class="logostyle1">
+                <div class="topicons">
+                    <div class="iconstyle">
+                        <!-- globe section starts here-->
+                        <!-- globe section starts here-->
+
+
+                        <div class="header iconholder">
+                            <!--1-->
+                            <div class="title-strip">
+                                <ul class="title-strip-list">
+                                    <li class="header-menu-list-item settings-list">
+                                        <ul>
+                                            <li class="setting-list-item">
+                                                <div class="checkbox-icon-btn">
+                                                    <span class="icon-language"></span>
+                                                    <span class="checkbox-icon-title">Change language</span>
+                                                </div>
+                                                <ul class="header-sub-menu">
+                                                    <li><a href="#" d>English</a></li>
+                                                    <li><a href="#" lang="ru">русский</a></li>
+                                                    <li><a href="#" lang="ar">العربية</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!-- globe section starts here-->
+
+                        <!-- globe section starts here-->
+                    </div>
+                    <!--div class="iconstyle"><a href="#"><img src="../images/profile_icon.jpg" alt="Profile"></a></div-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Logo Section Ends here-->
+    <!--Navigation Section Starts here-->
+    <div class="menudiv">
+        <ul id="ulcode">
+            <li class="navselected1 listspan"><a href="#">1. Passengers to check-in</a></li>
+            <li class="listspan"><a href="details.html">2. Passenger details</a></li>
+            <li class="listspan"><a href="#">3. Select seats</a></li>
+            <li class="listspan"><a href="confirmationnotall.html">4. Confirmation</a></li>
+        </ul>
+    </div>
+    <!--Navigation Section Ends here-->
+
+    <!--Main Content Section Starts here-->
+    <div class="main">
+        <div class="tablerow">&nbsp;</div>
+        <!--Content Column1 starts here-->
+        <div class="contentcol1">
+            <div class="contentheader">Outbound from Dubai (DXB) to Doha (DHO)</div>
+            <div class="commonrow">
+                <div class="commoncell" style="width: 30%;">Select the passenger(s) to be checked in</div>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="commonrowborderless">
+                <div class="commonblack12px" style="width: 45%;">Name</div>
+                <div class="commonblack12px" style="width: 15%;">Check-in</div>
+                <div class="commonblack12px"><a href="#">Select All</a></div>
+            </div>
+            <div class="bordertop2px">&nbsp;</div>
+            <div class="commonrow">
+
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Mrs. Sharon Test (Adult)</div>
+                <div class="commonblack12px">Checked-in</div>
+                <div class="commonblue12px"><a href="#">Print</a></div>
+                <div class="commonblue12px"><a href="#">Mail</a></div>
+                <div class="commonblue12px"><a href="#">SMS</a></div>
+                <div class="commonblue12px2">&nbsp;</div>
+
+            </div>
+
+            <div class="commonrow">
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Mr. Peter Test (Adult)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp1" type="checkbox" name="check">
+                        <label for="checkp1">&nbsp;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commonrow">
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Mr. Jason Test (Child)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp2" type="checkbox" name="check">
+                        <label for="checkp2">&nbsp;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commonrowborderbottom">
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Miss Tracy Test (Infant)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp3" type="checkbox" name="check">
+                        <label for="checkp3">&nbsp;</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--content1 ends-->
+
+        <!--content1 starts-->
+        <div class="contentcol1">
+            <div class="contentheader">Inbound from Doha (DHO) to Dubai (DXB)</div>
+            <div class="commonrow">
+                <div class="commoncell" style="width: 25%;">Select the passenger(s) to be checked in</div>
+
+            </div>
+            <br>
+
+            <div class="commonrowborderless">
+                <div class="commonblack12px" style="width: 45%;">Name</div>
+                <div class="commonblack12px" style="width: 15%;">Check-in</div>
+                <div class="commonblack12px"><a href="#">Select All</a></div>
+            </div>
+            <div class="bordertop2px">&nbsp;</div>
+            <div class="commonrow">
+
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Mrs. Sharon Test (Adult)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp4" type="checkbox" name="check">
+                        <label for="checkp4">&nbsp;</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="commonrow">
+
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Mr. Peter Test (Adult)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp5" type="checkbox" name="check">
+                        <label for="checkp5">&nbsp;</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="commonrow">
+
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Mr. Jason Test (Child)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp6" type="checkbox" name="check">
+                        <label for="checkp6">&nbsp;</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="commonrowborderbottom">
+
+                <div class="commoncell" style="width: 45%;">&nbsp;&nbsp;&nbsp;&nbsp;Miss Tracey Test (Infant)</div>
+                <div class="commoncell" style="width: 55%;">
+                    <div class="checkbox leftmargin">
+                        <input id="checkp7" type="checkbox" name="check">
+                        <label for="checkp7">&nbsp;</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--content1 ends-->
+
+        <!--content1 starts-->
+        <div class="contentcol1">
+            <br>
+            <br>
+            <div class="contentheader">Travel Document</div>
+            <div class="commonrow">
+                <div class="commoncell" style="width: 25%;">
+                    For this itinerary you will need: Passport and Visa<br>
+                    <br>
+                    Do the selected passenger(s) have the travel documents required for this itinerary?<br>
+                    <a href="#">View international visa requirements.</a>
+                </div>
+            </div>
+            <div>
+                <div class="checkbox1">
+                    <input id="check5" type="checkbox" name="check">
+                    <label for="check5"><span class="marginright"></span><span class="marginright"></span></label>
+                    I have all the <a href="#">Valid Documents</a>
+                </div>
+            </div>
+            <br>
+            <div style="width: 100%;">
+                <div class="infotableleftborder">&nbsp;</div>
+                <div class="infotable" style="width: 100%;">
+                    <div class="black12px"><span class="blackbold12px">Unable to complete online check-in</span><br>
+                        We're sorry, but you cannot complete online check-in if you do not have valid documents</div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <!--content1 ends-->
+
+        <!--content1 starts-->
+        <div class="contentcol1">
+            <br>
+            <br>
+            <div class="contentheader">Security Questions</div>
+            <div class="commonrow" style="margin-bottom: -20px;">
+                <div class="commoncell" style="width: 25%;">
+                    This is an introductory line for the security questions.<br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+                    <a href="#">This is a link style</a>
+                </div>
+            </div>
+            <div class="commoncell">
+                <div class="checkbox1">
+                    <input id="check6" type="checkbox" name="check">
+                    <label for="check6"><span class="marginright"></span><span class="marginright"></span></label>
+                    No one has interfered with my baggage since I packed it							
+                </div>
+                <div class="checkbox1">
+                    <input id="check7" type="checkbox" name="check">
+                    <label for="check7"><span class="marginright"></span><span class="marginright"></span></label>
+                    I am not carrying anything for anyone else							
+                </div>
+                <div class="checkbox1">
+                    <input id="check8" type="checkbox" name="check">
+                    <label for="check8"><span class="marginright"></span><span class="marginright"></span></label>
+                    I adhere to not accept any items from any passengers who are not travelling with me							
+                </div>
+
+            </div>
+            <div style="width: 100%;">
+                <div class="infotableleftborder">&nbsp;</div>
+                <div class="infotable" style="width: 100%;">
+                    <div class="black12px">
+                        <span class="blackbold12px">Unable to complete online check-in</span><br>
+                        We're sorry, but you cannot complete online check-in if you cannot confirm the security questions
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <!--content1 ends-->
+
+        <!--content1 starts-->
+        <div class="contentcol1">
+            <br>
+            <br>
+            <div class="contentheader">Dangerous Goods</div>
+            <div class="commonrow">
+                <div class="commoncell" style="width: 25%;">
+                    Do any of the selected passengers have prohibited items in their baggage?
+                    <br>
+                    <a href="#Top" onclick="popdangerous1('popUpDiv1');">View dangerous goods prohibited in your baggage.</a>&nbsp;&nbsp;
+						<a href="#Top" onclick="popdangerous2('popUpDiv2');">Email</a>&nbsp;&nbsp;
+						<a href="#Top" onclick="popdangerous('popUpDiv');">Notification</a>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="checkbox1">
+                    <input id="check9" type="checkbox" name="check">
+                    <label for="check9"><span class="marginright"></span><span class="marginright"></span></label>
+                    I do not carry any <a href="#">Dangerous Goods</a>
+                </div>
+            </div>
+
+
+
+            <div style="width: 100%;">
+                <div class="infotableleftborder">&nbsp;</div>
+                <div class="infotable" style="width: 100%;">
+                    <div class="black12px">
+                        <span class="blackbold12px">Unable to complete online check-in</span><br>
+                        We're sorry, but you cannot complete online check-in if you do not have valid documents
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+            <div class="commoncell">
+                <div class="checkbox1">
+                    <input id="check10" type="checkbox" name="check">
+                    <label for="check10"><span class="marginright"></span><span class="marginright"></span></label>
+                    I agree to flydubai's <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+
+
+            <div style="width: 100%;">
+                <div style="width: 100%;">
+                    <div class="nextbutton">Next: Passenger Details &nbsp;&nbsp;<img src="../images/nextarrow.png" alt="nextarrow"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <!--content1 ends-->
+
+        <!--Content Column1 Ends here-->
+
+        <!--Content Column2 Start here-->
+        <div class="contentcol2">
+
+            <div class="blueheader">ECBB96</div>
+            <div>
+                <div class="checkintable">
+                    <div class="black14px">Remaining time for check-in</div>
+                    <div class="tableclass">
+                        <div class="tablecellclass">09</div>
+                        <div class="timerdivider">:</div>
+                        <div class="tablecellclass">09</div>
+                        <div class="timerdivider">:</div>
+                        <div class="tablecellclass">09</div>
+                    </div>
+                    <div class="timeclass">
+                        <div class="timeclassgrey12px" style="width: 30%;">Hours</div>
+                        <div class="timeclassgrey12px" style="width: 42%;">Minutes</div>
+                        <div class="timeclassgrey12px" style="width: 28%;">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--content second column and second row starts here-->
+            <div>
+                <div class="outboundheader">
+                    <div class="tableclass">
+                        <div class="white16px"><span class="paddingbottom5px"><a href="#">
+                            <img src="../images/outbound_icon.png" alt="Collapse"></a>&nbsp;&nbsp;Outbound</span></div>
+                        <div class="white16px"><span class="paddingbottom5px">from Dubai (DXB)<br>
+                            to Doha (DHO)</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <!--content second column and second row ends here-->
+            <div>
+                <div class="inoutboundcontent">
+                    <div class="grey14px">Origin: <span class="blackbold14px">Dubai Terminal2</span></div>
+                    <div class="grey14px">Destination: <span class="blackbold14px">Doha</span></div>
+                    <div class="grey14px">Flight no.: <span class="blackbold14px">FZ-003</span></div>
+                    <br>
+                    <div class="grey14px"><span class="blackbold14px">Thu, 18th September 2015</span></div>
+                    <div class="grey14px">Depart: <span class="blackbold14px">14:30</span></div>
+                    <div class="grey14px">Arrive: <span class="blackbold14px">16:40</span></div>
+                    <div class="grey14px">Duration: <span class="blackbold14px">2h 10min</span></div>
+                    <div class="grey14px">Class of Travel: <span class="blackbold14px">Economy</span></div>
+                    <br>
+
+
+
+
+                    <div class="iconandtext">
+                        <img src="../images/handbaggage_icon.png" alt="Hand Baggage">2x 7kg Hand Baggage</div>
+                    <div class="iconandtext">
+                        <img src="../images/checkedbagga_icon.png" alt="Checked Baggage">2x 40kg Checked Baggage</div>
+                    <div class="iconandtext">
+                        <img src="../images/flightentertainment_icon.png" alt="1xIn-flight Entertainment">1x In-flight Entertainment</div>
+                    <div class="iconandtext">
+                        <img src="../images/meals_icon.png" alt="2xMeals">2x Meals</div>
+                    <div class="iconandtext">
+                        <img src="../images/seats_icon.png" alt="4xSeats">4x Seats</span></div>
+
+                </div>
+            </div>
+            <br>
+
+
+            <!--content second column and third row starts here-->
+            <div>
+                <div class="outboundheader">
+                    <div class="tableclass">
+                        <div class="white16px"><span class="paddingbottom5px"><a href="#">
+                            <img src="../images/inbound_icon.png" alt="Expand"></a>&nbsp;&nbsp;Inbound</span></div>
+                        <div class="white16px"><span class="paddingbottom5px">from Doha (DHO)<br>
+                            to Dubai (DXB)</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <!--content second column and third row ends here-->
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <!--A-5453-->
+        <div class="footerHolder">
+            <ul class="footerolci">
+                <li><a href="http://careers.flydubai.com">Careers |</a></li>
+                <li><a href="/en/contact-us/">Contact us |</a></li>
+                <li><a href="/en/sitemap/">Site map |</a></li>
+                <li><a href="/en/about-us/policies/">Policies |</a></li>
+                <li><a href="/en/news/press-gallery/images/">Press room |</a></li>
+                <li><a href="/en/procurement-and-contracts">Procurement |</a></li>
+                <li><a href="/en/terms-and-conditions/">Terms and conditions |</a></li>
+                <li><a href="https://ta.flydubai.com/en/user/signin" target="_blank">Travel agents</a></li>
+            </ul>
+            <p class="footerp">&nbsp;&copy flydubai 2015. All rights reserved.</p>
+            <span style="float: right; color: #666; font-size: 10px">Version: 1.0.0.0
+            </span>
+        </div>
+    </div>
+
+    <!--popup section starts here-->
+
+
+    <!-- popup starts here -->
+    <div id="popUpDiv2" style="display: block;">
+        <div class="mainpopbg"></div>
+        <div class="popup">
+            <div class="popcontent">
+                <div class="poprow">
+                    <div class="popheader">Email boarding pass<a href="javascript:void(0)" onclick="document.getElementById('popUpDiv2').style.display='none';"><img src="../images/popclosebtn.png"></a></div>
+                </div>
+                <div class="poprow">
+                    <div class="popcontent1">
+                        Specify the email address to send the boarding pass.<br>
+                        You may also choose to send all boarding passes for this booking.
+                    </div>
+                </div>
+                <div class="poprow">
+                    <div class="commonrowborderless1" style="width: 68%; margin: 0 auto;">
+                        <div class="commoncell2">Email:<span class="marginright"></span></div>
+                        <div class="commonblue12px">
+                            <form id="form1" role="form">
+                                <input type="text" style="width: 95%;" data-required="true" data-required-message="This is not a valid email address. Please check and try again.">
+                            </form>
+                        </div>
+                        <div class="errortablemain">
+                            <div></div>
+
+                        </div>
+                    </div>
+
+                    <div class="errortext" style="width: 68%; margin: 0 auto;">
+                        <div class="commoncell2" style="width: 17%; padding: 5px;"><span class="marginright"></span>&nbsp;</div>
+                        <span class="checkbox1">
+                            <input id="check14" type="checkbox" name="check">
+                            <label for="check14"><span class="marginright"></span></label>
+                        </span>
+                        <span class="black14px">Send all boarding passes to this email</span>
+                        <br>
+                        <br>
+                        <div>
+                            <div class="greybuttonclass"><a href="javascript:void(0)" onclick="document.getElementById('popUpDiv2').style.display='none';">Send mail</a></div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- popup ends here -->
+    <!--popup section ends here-->
+    <!--Main Content Section Ends here-->
+</body>
+</html>

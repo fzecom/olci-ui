@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+    <meta name="description" content="flydubai" />
+    <meta name="keywords" content="flydubai" />
+    <title>Online Check-in | flydubai</title>
+    <link type="text/css" rel="stylesheet" href="../css/flydubai.css">
+    <link type="text/css" rel="stylesheet" href="../css/flydubai_styles.css">
+
+    <!--<link rel="stylesheet" href="http://ux.flydubai.com/rebrand/css/flydubai.css">-->
+    <link rel="shortcut icon" type="image/x-icon" href="http://ux.flydubai.com/favicon.ico">
+    <link rel="shortcut icon" sizes="192x192" href="http://ux.flydubai.com/icon-192x192.png">
+    <link rel="apple-touch-icon" href="http://ux.flydubai.com/icon-152x152.png">
+    <script src="http://ux.flydubai.com/rebrand/js/flydubai.js"></script>
+    <script src="http://ux.flydubai.com/rebrand/js/airports.js"></script>
+    <!-- IN PRODUCTION, LOAD A JSON FILE AND CONVERT TO THIS SPECIFIC OBJECT NOTATION -->
+
+    <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/action_script.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="../js/flydubai.js"></script>
+</head>
+<body>
+    <div id="error-tooltip-bubble">
+        <div class="tooltip-text"></div>
+        <div class="tooltip-close"></div>
+        <div class="tooltip-arrow"></div>
+    </div>
+    <!--Logo Section Starts here-->
+    <div class="main">
+        <div class="tablerow">
+            <div class="logostyle">
+                <img src="../images/flydubai_logo.jpg" alt="logo">
+                <span class="backtoflydubaiarrow">
+                    <img src="../images/backto_flydubai_arrow.jpg" alt="backtoflydubai">&nbsp;<a href="#" class="backtoflydubai">Back to flydubai.com</a></span>
+            </div>
+            <div class="logostyle1">
+                <div class="topicons">
+                    <div class="iconstyle">
+                        <!-- globe section starts here-->
+                        <!-- globe section starts here-->
+
+
+                        <div class="header iconholder">
+                            <!--1-->
+                            <div class="title-strip">
+                                <ul class="title-strip-list">
+                                    <li class="header-menu-list-item settings-list">
+                                        <ul>
+                                            <li class="setting-list-item">
+                                                <div class="checkbox-icon-btn">
+                                                    <span class="icon-language"></span>
+                                                    <span class="checkbox-icon-title">Change language</span>
+                                                </div>
+                                                <ul class="header-sub-menu">
+                                                    <li><a href="#" d>English</a></li>
+                                                    <li><a href="#" lang="ru">русский</a></li>
+                                                    <li><a href="#" lang="ar">العربية</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!-- globe section starts here-->
+
+                        <!-- globe section starts here-->
+
+                    </div>
+                    <!--div class="iconstyle"><a href="#"><img src="../images/profile_icon.jpg" alt="Profile"></a></div-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Logo Section Ends here-->
+    <!--Navigation Section Starts here-->
+    <div class="menudiv">
+        <ul id="ulcode">
+            <li class="navprev listspan"><a href="index.html">1. Passengers to check-in</a></li>
+            <li class="navselected listspan"><a href="#">2. Passenger details</a></li>
+            <li class="listspan"><a href="#">3. Select seats</a></li>
+            <li class="listspan"><a href="confirmationnotall.html">4. Confirmation</a></li>
+        </ul>
+    </div>
+    <!--Navigation Section Ends here-->
+
+    <!--Main Content Section Starts here-->
+    <div class="main container">
+        <div class="tablerow">&nbsp;</div>
+        <!--Content Column1 starts here-->
+        <div class="left_pane">
+            <div class="accordion" id="accordion" style="">
+                <h3>Mr. Sharon Test</h3>
+                <div class="content">
+                    <!--<div class="contentheader"><span class="headerexpanicon">&nbsp;</span>&nbsp;Mr. Sharon Test</div>-->
+                    <div>
+                        <div class="commoncell" style="width: 30%;">Please provide the needed passenger informations for the check-in.</div>
+
+                    </div>
+                    <br>
+
+                    <!-- travel document content starts here-->
+                    <div class="commonrowborderless">
+                        <div class="commonblack12px" style="width: 45%;">Travel Document</div>
+                    </div>
+                    <form id="form1" role="form">
+                        <div class="commonrow">
+                            <div class="commoncell1" style="width: 22%;">Document type:</div>
+                            <div class="commonblue12px">
+                                <select class="combostyle">
+                                    <option>Passport</option>
+                                    <option>Passport1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="commonrowborderless1">
+                            <div class="commoncell2" style="width: 22%;">Document number:</div>
+                            <div class="commonblue12px">
+                                <input type="text" data-required="true" data-required-message="Your entered number appears to be no valid passport number. Please check it again."><span class="marginright"></span><a href="#">What is this?</a>
+                            </div>
+                        </div>
+                        <div class="combostylerow">
+                            <div class="commoncell1" style="width: 22%;">Issuing country:</div>
+                            <div class="commonblue12px">
+                                <select class="combostyle1">
+                                    <option>Choose your country</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="combostylerow">
+                            <div class="commoncell1" style="width: 22%;">Expiry date:</div>
+                            <div class="commoncell3">
+                                <div class="date-picker">
+                                    <div class="col-2">
+                                        <div class="calendar-container" data-day="">
+                                            <input type="text" id="Text1" data-id="2" class="calendar is-outward" placeholder="Expiry Date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- travel document content ends here-->
+
+                        <!-- travel document content starts here-->
+                        <div class="commonrowborderless">
+                            <div class="commonblack12px" style="width: 45%;">Additional passenger information</div>
+                        </div>
+
+                        <div class="commonrow">
+
+                            <div class="commoncell1" style="width: 22%;">First Name:</div>
+
+                            <div class="commonblue12px">
+                                <input type="text" placeholder="Enter your first name">
+                            </div>
+                        </div>
+                        <div class="commonrowborderless1">
+                            <div class="commoncell2" style="width: 22%;">Middle Name:</div>
+                            <div class="commoncell3">
+                                <input type="text" placeholder="Enter your middle name"><span class="marginright"></span><span class="grey12px">Optional field</span>
+                            </div>
+
+                        </div>
+                        <div class="commonrowborderless1">
+                            <div class="commoncell2" style="width: 22%;">Family Name:</div>
+                            <div class="commoncell3">
+                                <input type="text" placeholder="Enter your family name"><span class="marginright"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="commonrowborderless1">
+                            <div class="commoncell2" style="width: 22%;">Gender:</div>
+                            <div class="commoncell3">
+
+                                <div class="radio">
+
+                                    <input id="radio1" type="radio" name="check">
+                                    <label for="radio1"></label>
+                                    <span class="marginright"></span>Male
+                                
+                                <span class="marginright">
+                                    <span class="marginright"></span><span class="marginright"></span>
+                                    <input id="radio2" type="radio" name="check">
+                                    <label for="radio2"></label>
+                                    <span class="marginright"></span>Female								
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="combostylerow">
+                            <div class="commoncell1" style="width: 22%;">Nationality:</div>
+                            <div class="commonblue12px">
+                                <select class="combostyle1">
+                                    <option>Choose your country</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="combostylerow">
+                            <div class="commoncell1" style="width: 22%;">Date of birth:</div>
+                            <div class="commoncell3">
+                                <div class="date-picker">
+                                    <div class="col-3">
+                                        <div class="calendar-container" data-day="">
+                                            <input type="text" id="calendarOutward" data-id="3" class="calendar is-outward" placeholder="Outward">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- travel document content ends here-->
+
+                        <!-- travel document content starts here-->
+                        <div class="commonrowborderless">
+                            <div class="commonblack12px" style="width: 45%;">Emergency contact &nbsp;&nbsp;<a href="#" class="bluenonbold14pxlink">How will we use this information?</a></div>
+                        </div>
+
+                        <div class="commonrow">
+
+                            <br>
+                        </div>
+                        <div class="commonrowborderless1">
+                            <div class="commoncell2" style="width: 22%;">Contact Name:</div>
+                            <div class="commoncell3">
+                                <input type="text" placeholder="Enter your contact name"><span class="marginright"></span><span class="grey12px">Optional field</span>
+                            </div>
+
+                        </div>
+
+                        <div class="combostylerow">
+                            <div class="commoncell1" style="width: 22%; vertical-align: middle;">Contact phone:</div>
+
+                            <div class="celltablecontainer">
+                                <!--1 starts-->
+                                <div class="tr1">
+                                    <div class="td1"><span class="tdtextpadding">Type</span></div>
+                                    <div class="td1"><span class="tdtextpadding">Type</span></div>
+                                    <div class="td1"><span class="tdtextpadding">Number</span></div>
+                                    <div calss="td1">&nbsp;</div>
+                                </div>
+                                <div class="tr1">
+                                    <div class="td1">
+
+                                        <select class="combostyle2date">
+                                            <option>Mobile &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                            <option>Mobile &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                        </select>&nbsp;
+                                    </div>
+                                    <div class="td1">
+                                        <select class="combostyle2date">
+                                            <option>Choose &nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                        </select>&nbsp;
+                                    </div>
+                                    <div>
+                                        <input type="text" style="width: 102%; margin-right: 12px;" placeholder="Enter your number">
+                                    </div>
+                                    <div class="td1adjustwidth"><span class="grey12px"><span class="marginright"></span><span class="marginright"></span><span class="marginright"></span>&nbsp;&nbsp;&nbsp;Optional field</span></div>
+                                </div>
+                                <div class="tr1">
+                                    <div class="td1table">
+                                        <div class="absolutediv">
+                                            <br>
+                                            <span class="checkbox1">
+                                                <input id="check14" type="checkbox" name="check">
+                                                <label for="check14">
+                                                    <span class="marginright"></span>
+                                            </span></label>
+											<span class="black14px">use these details for all passengers</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--1 ends-->
+                            </div>
+                        </div>
+                        <!-- travel document content ends here-->
+
+                    </form>
+                </div>
+                <!--content1 ends-->
+
+
+
+
+
+                <!--content1 starts-->
+
+                <h3>Mr. Peter Test</h3>
+                <div class="content"></div>
+                <h3>Mr. Jason Test</h3>
+                <div class="content"></div>
+                <h3>Miss. Tracey Test</h3>
+                <div class="content"></div>
+            </div>
+            <div>
+                <br>
+                <div class="commoncell">
+                    <div class="checkbox1">
+                        <span class="checkbox1">
+                            <input id="check11" type="checkbox" name="check">
+                            <label for="check11">
+                                <span class="marginright"></span>
+                        </span></label>
+											<span class="blackbold14px">*I confirm that the above details are true and accurate.</span>
+                    </div>
+
+                </div>
+
+
+                <div style="width: 100%;">
+                    <div style="width: 100%;">
+                        <div class="nextbutton">Next: Selected seats &nbsp;&nbsp;<img src="../images/nextarrow.png" alt="nextarrow"></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <!--content1 ends-->
+
+        <!--Content Column1 Ends here-->
+        <div class="right_pane">
+            <!--Content Column2 Start here-->
+            <div>
+
+                <div class="blueheader">ECBB96</div>
+                <div>
+                    <div class="checkintable">
+                        <div class="black14px">Remaining time for check-in</div>
+                        <div class="tableclass">
+                            <div class="tablecellclass">09</div>
+                            <div class="timerdivider">:</div>
+                            <div class="tablecellclass">09</div>
+                            <div class="timerdivider">:</div>
+                            <div class="tablecellclass">09</div>
+                        </div>
+                        <div class="timeclass">
+                            <div class="timeclassgrey12px" style="width: 30%;">Hours</div>
+                            <div class="timeclassgrey12px" style="width: 42%;">Minutes</div>
+                            <div class="timeclassgrey12px" style="width: 28%;">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="sideaccordion" id="sideaccordion">
+                <h3>
+                    <span class="titler">Outbound</span>
+                    <span><b>from <i>Dubai (DXB)</i></b> <b>to <i>Doha (DHO)</i></b></span>
+                </h3>
+                <div class="acc_content">
+                    <dl>
+                        <dt><span>Orgin: </span>Dubai Terminal2</dt>
+                        <dt><span>Destination: </span>Doha</dt>
+                        <dt><span>Flight no.: </span>FZ-003</dt>
+                    </dl>
+                    <b>Thu, 18th September 2015</b>
+                    <dl>
+                        <dt><span>Depart: </span>14:30</dt>
+                        <dt><span>Arrive: </span>16:40</dt>
+                        <dt><span>Duration: </span>2h 10min</dt>
+                        <dt><span>Class of Travel: </span>Economy</dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../images/handbaggage_icon.png" alt="Hand Baggage">
+                            <i>2x 7kg Hand Baggage </i></dt>
+                        <dt>
+                            <img src="../images/checkedbagga_icon.png" alt="Checked Baggage">
+                            <i>2x 40kg Checked Baggage </i></dt>
+                        <dt>
+                            <img src="../images/flightentertainment_icon.png" alt="1xIn-flight Entertainment">
+                            <i>1x In-flight Entertainment </i></dt>
+                        <dt>
+                            <img src="../images/meals_icon.png" alt="2xMeals">
+                            <i>2x Meals </i></dt>
+                        <dt>
+                            <img src="../images/seats_icon.png" alt="4xSeats">
+                            <i>4x Seats </i></dt>
+                    </dl>
+                </div>
+
+                <h3>
+                    <span class="titler">Inbound</span>
+                    <span><b>from <i>Doha (DHO)</i></b> <b>to <i>Dubai (DXB)</i></b></span>
+                </h3>
+                   
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><!--A-5453-->
+        <div class="footerHolder">
+            <ul class="footerolci">
+                <li><a href="http://careers.flydubai.com">Careers |</a></li>
+                <li><a href="/en/contact-us/">Contact us |</a></li>
+                <li><a href="/en/sitemap/">Site map |</a></li>
+                <li><a href="/en/about-us/policies/">Policies |</a></li>
+                <li><a href="/en/news/press-gallery/images/">Press room |</a></li>
+                <li><a href="/en/procurement-and-contracts">Procurement |</a></li>
+                <li><a href="/en/terms-and-conditions/">Terms and conditions |</a></li>
+                <li><a href="https://ta.flydubai.com/en/user/signin" target="_blank">Travel agents</a></li>
+            </ul>
+            <p class="footerp">&nbsp;&copy flydubai 2015. All rights reserved.</p>
+            <span style="float: right; color: #666; font-size: 10px">Version: 1.0.0.0
+            </span>
+        </div>
+    </div>
+    <!--Main Content Section Ends here-->
+</body>
+</html>
